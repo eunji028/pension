@@ -1,0 +1,394 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1">
+		<title>펜션 더조은</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script src="js/pension.js"></script>
+		<link href="fontawesome/css/all.css" rel="stylesheet">
+		<link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+		<link rel = "stylesheet" type="text/css" href="css/pension.css">
+	</head>
+	<body>
+		<div class="allMenuBack"></div>
+		<header>
+			<div id="headWrap">
+				<h1><a href="index.html"><img src="images/logo.png" alt="로고 이미지"></a></h1>
+				<nav>
+					<ul class="navMenu">
+						<li><a href="#" alt="펜션 더조은" onmouseover="this.innerHTML='펜션 더조은'" onmouseout="this.innerHTML='The Joeun'">The Joeun</a></li>
+						<li class="ROOM double">
+							<a href="#" alt="객실 안내" onmouseover="this.innerHTML='객실 안내'" onmouseout="this.innerHTML='ROOM'">ROOM</a>
+							<ul class="hidden subMenuRoom">
+								<li><a href="#" alt="스위트">스위트</a></li>
+								<li><a href="#" alt="패밀리">패밀리</a></li>
+								<li><a href="#" alt="스탠다드 트윈A">스탠다드 트윈A</a></li>
+								<li><a href="#" alt="스탠다드 트윈B">스탠다드 트윈B</a></li>
+								<li><a href="#" alt="디럭스 트윈A">디럭스 트윈A</a></li>
+								<li><a href="#" alt="디럭스 트윈B">디럭스 트윈B</a></li>
+								<li><a href="#" alt="트윈A">트윈A</a></li>
+								<li><a href="#" alt="트윈B">트윈B</a></li>
+								<li><a href="#" alt="온돌 한실">온돌 한실</a></li>
+							</ul>
+						</li>
+						<li class="SPECIAL double">
+							<a href="#" alt="스페셜" onmouseover="this.innerHTML='스페셜'" onmouseout="this.innerHTML='SPECIAL'">SPECIAL</a>
+							<ul class="hidden subMenuSpe">
+								<li><a href="#" alt="이벤트">이벤트</a></li>
+								<li><a href="#" alt="프로모션">프로모션</a></li>
+							</ul>
+						</li>
+						<li><a href="#" alt="관광지" onmouseover="this.innerHTML='관광지'" onmouseout="this.innerHTML='TRAVEL'">TRAVEL</a></li>
+						<li><a href="#" alt="객실 예약" onmouseover="this.innerHTML='객실 예약'" onmouseout="this.innerHTML='RESERVATION'">RESERVATION</a></li>
+						<li><a href="#" alt="안내" onmouseover="this.innerHTML='안내'" onmouseout="this.innerHTML='GUIDE'">GUIDE</a></li>
+					</ul>
+				</nav>
+				<nav>
+					<ul class="navBtn">
+						<li><a href="#" alt="예약 바로가기"><i class="far fa-calendar-alt"></i></a></li>
+						<li><a href="#" alt="전체메뉴"><i class="fas fa-plus"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header> <!-- header 끝 -->
+		
+		<div class="allMenu">
+			<ul>
+				<li><a href="#" alt="">펜션 더조은</a></li>
+				<li><a href="#" alt="">객실 안내</a>
+					<ul>
+						<li>-</li>
+						<li><a href="#" alt="스위트">스위트</a></li>
+						<li><a href="#" alt="패밀리">패밀리</a></li>
+						<li><a href="#" alt="스탠다드 트윈A">스탠다드 트윈A</a></li>
+						<li><a href="#" alt="스탠다드 트윈B">스탠다드 트윈B</a></li>
+						<li><a href="#" alt="디럭스 트윈A">디럭스 트윈A</a></li>
+						<li><a href="#" alt="디럭스 트윈B">디럭스 트윈B</a></li>
+						<li><a href="#" alt="트윈A">트윈A</a></li>
+						<li><a href="#" alt="트윈B">트윈B</a></li>
+						<li><a href="#" alt="온돌 한실">온돌 한실</a></li>
+					</ul>
+				</li>
+				<li><a href="#" alt="">스페셜</a>
+					<ul>
+						<li>-</li>
+						<li><a href="#" alt="이벤트">이벤트</a></li>
+						<li><a href="#" alt="프로모션">프로모션</a></li>
+					</ul>
+				</li>
+				<li><a href="#" alt="">관광지</a></li>
+				<li><a href="#" alt="">객실 예약</a></li>
+				<li><a href="#" alt="">안내</a></li>
+			</ul>
+			<p>전체<br>메뉴</p>
+		</div>
+		
+		<section id="popup">
+			<img src="images/popup_01.jpg">
+			<p><a href="#" alt="팝업창 닫기 버튼">[ 닫기 ]</a></p>
+		</section>
+		
+		<aside>
+			<ul>
+				<li>
+					<img class="sideTitle" src="images/aside_top.png">
+					<a href="#"><img class="sideIcon sideTop" src="images/aside_li_on.png"></a>
+				</li>
+				<li>
+					<img class="sideTitle" src="images/aside_about.png">
+					<a href="#"><img class="sideIcon sideAbout" src="images/aside_li.png"></a>
+				</li>
+				<li>
+					<img class="sideTitle" src="images/aside_preview.png">
+					<a href="#"><img class="sideIcon sidePreview" src="images/aside_li.png"></a>
+				</li>
+				<li>
+					<img class="sideTitle" src="images/aside_review.png">
+					<a href="#"><img class="sideIcon sideReview" src="images/aside_li.png"></a>
+				</li>
+				<li>
+					<img class="sideTitle" src="images/aside_promo.png">
+					<a href="#"><img class="sideIcon sidePromo" src="images/aside_li.png"></a>
+				</li>
+				<li>
+					<img class="sideTitle" src="images/aside_location.png">
+					<a href="#"><img class="sideIcon sideLoca" src="images/aside_li.png"></a>
+				</li>
+			</ul>
+		</aside>
+		
+		<section id="main">
+			<img src="images/main_01.jpg">
+			<div class="main_slide_back"></div>
+			<div id="Wrap">
+				<article class="mainSlide">
+					<img src="images/main_01.jpg">
+					<img src="images/main_02.jpg">
+					<img src="images/main_03.jpg">
+					<img src="images/main_04.jpg">
+					<img src="images/main_05.jpg">
+				</article>
+				<p>당신의 하루가 행복으로 가득할 수 있도록.<br>
+				<span>PENSION THE JOEUN</span></p>
+				<article class="scroll">
+					<p>SCROLL DOWN</p>
+					<img src="images/main_scroll.png">
+				</article>
+			</div>
+		</section> <!-- section_Main 끝 -->
+		
+		<section id="about">
+			<article>
+				<img src="images/about_01.jpg">
+				<img src="images/about_02.jpg">
+			</article>
+			<article>
+				<p>아름다운 자연 속에서 느끼는 진정한 휴식</p>
+				<p>바쁜 일상과 거리를 두고 잠시 쉼표가 필요한 시간,<br>
+					펜션 더조은에서 바다 그대로의 일상을 만나보세요.</p>
+			</article>
+		</section> <!-- section_About 끝 -->
+		
+		<section id="preview">
+			<section id="Wrap">
+				<h2 class="Title">객실 전경<span class="subTitle1">ROOM PREVIEW</span></h2>
+				<article class="roomlist">
+					<ul>
+						<li><a href="#" alt="">스위트</a></li>
+						<li><a href="#" alt="">패밀리</a></li>
+						<li><a href="#" alt="">스탠다드 트윈A</a></li>
+						<li><a href="#" alt="">스탠다드 트윈B</a></li>
+						<li><a href="#" alt="">디럭스 트윈A</a></li>
+						<li><a href="#" alt="">디럭스 트윈B</a></li>
+						<li><a href="#" alt="">트윈A</a></li>
+						<li><a href="#" alt="">트윈B</a></li>
+						<li><a href="#" alt="">온돌 한실</a></li>
+					</ul>
+				</article>
+				<article class="detail">	
+					<a href="#" alt="객실 자세히 보기"><span>객실 자세히 보기 &nbsp;></span></a>
+				</article>
+				<article class="roomImg">
+					<article>
+						<img src="images/preview_01.jpg">
+						<img src="images/preview_02.jpg">
+						<img src="images/preview_03.jpg">
+						<img src="images/preview_01.jpg">
+					</article>
+					<ul class="roomImgBtn">
+						<li><i class="fas fa-chevron-left"></i></li>
+						<li><span>1 / 7</span></li>
+						<li><i class="fas fa-chevron-right"></i></li>
+					</ul>
+				</article>
+			</section>
+		</section> <!-- section_Preview 끝 -->
+		
+		<div class="reviewPopupBack"></div>
+		<section id="review">
+			<h2 class="Title">더조은 후기<span class="subTitle">THE JOEUN REVIEW</span></h2>
+			<article class="reviewList">
+				<article class="reviewTop">
+					<a href="#" class="w300"><img src="images/review_01.jpg"></a>
+					<a href="#" class="w500"><img src="images/review_02.jpg"></a>
+					<a href="#" class="w300"><img src="images/review_03.jpg"></a>
+				</article>
+				<article>
+					<a href="#" class="w560"><img src="images/review_04.jpg"></a>
+					<a href="#" class="w560"><img src="images/review_05.jpg"></a>
+				</article>
+			</article>
+			
+			<article class="reviewPopup">
+				<article class="reviewPopupImg">
+					<article>
+						<img src="images/review_popup_01.jpg">
+						<img src="images/review_popup_02.jpg">
+						<img src="images/review_popup_03.jpg">
+						<img src="images/review_popup_01.jpg">
+					</article>
+				</article>
+				<img class="popupBtn popupBtnPrev" src="images/review_popup_btn_prev.png" onmouseover="this.src='images/review_popup_btn_prev_hover.png'" onmouseout="this.src='images/review_popup_btn_prev.png'">
+				<img class="popupBtn popupBtnNext" src="images/review_popup_btn_next.png" onmouseover="this.src='images/review_popup_btn_next_hover.png'" onmouseout="this.src='images/review_popup_btn_next.png'">
+				<article>
+					<p>User NickName</p>
+					<!-- 별점 -->
+					<div class="starRating">
+						<span class="starR1 on" value="0.5"></span>
+						<span class="starR2" value="1"></span>
+						<span class="starR1" value="1.5"></span>
+						<span class="starR2" value="2"></span>
+						<span class="starR1" value="2.5"></span>
+						<span class="starR2" value="3"></span>
+						<span class="starR1" value="3.5"></span>
+						<span class="starR2" value="4"></span>
+						<span class="starR1" value="4.5"></span>
+						<span class="starR2" value="5"></span>
+					</div>
+				</article>
+				<article class="reviewBody">
+					<p>시설 : 좋아요</p>
+					<p>위생 : 좋아요</p>
+					<p>친절 : 좋아요</p>
+					<p>리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. </p>
+				</article>
+				<img src="images/review_popup_btn_close.png" onmouseover="this.src='images/review_popup_btn_close_hover.png'" onmouseout="this.src='images/review_popup_btn_close.png'">
+			</article> <!-- review popup 끝 -->
+		</section> <!-- section_review 끝 -->
+		
+		<section id="picpic">
+			<div></div>
+		</section> <!-- section_picpic 끝 -->
+		
+		<section id="promo">
+			<section id="Wrap">
+				<h2 class="Title">프로모션<span class="subTitle">PROMOTION</span></h2>
+				<p>펜션 더조은이 준비한 다양한 프로모션과 이벤트들을 만나보세요.</p>
+				<article class="promolist">
+					<article class="promowrap">
+						<a href="#" alt="프로모션2">
+							<article class="promoAbsol promo2">
+								<img src="images/promo_02.jpg" alt="제휴 이벤트 이미지">
+								<span>강릉</span>
+								<p>카페거리 제휴 매장 할인 이벤트</p>
+								<p>2021.4.1 ~ 2021.4.30</p>
+							</article>
+						</a>
+						<a href="#" alt="프로모션3">
+							<article class="promoAbsol promo3">
+								<img src="images/promo_03.jpg" alt="제휴 이벤트 이미지">
+								<span>강릉</span>
+								<p>카페거리 제휴 매장 할인 이벤트</p>
+								<p>2021.4.1 ~ 2021.4.30</p>
+							</article>
+						</a>
+						<a href="#" alt="프로모션4">
+							<article class="promoAbsol promo4">
+								<img src="images/promo_04.jpg" alt="제휴 이벤트 이미지">
+								<span>강릉</span>
+								<p>카페거리 제휴 매장 할인 이벤트</p>
+								<p>2021.4.1 ~ 2021.4.30</p>
+							</article>
+						</a>
+						<a href="#" alt="프로모션1">
+							<article class="promoAbsol promo1">
+								<img src="images/promo_01.jpg" alt="제휴 이벤트 이미지">
+								<span>강릉</span>
+								<p>카페거리 제휴 매장 할인 이벤트</p>
+								<p>2021.4.1 ~ 2021.4.30</p>
+							</article>
+						</a>
+						<a href="#" alt="프로모션2">
+							<article class="promoAbsol promo2">
+								<img src="images/promo_02.jpg" alt="제휴 이벤트 이미지">
+								<span>강릉</span>
+								<p>카페거리 제휴 매장 할인 이벤트</p>
+								<p>2021.4.1 ~ 2021.4.30</p>
+							</article>
+						</a>
+						<a href="#" alt="프로모션3">
+							<article class="promoAbsol promo3">
+								<img src="images/promo_03.jpg" alt="제휴 이벤트 이미지">
+								<span>강릉</span>
+								<p>카페거리 제휴 매장 할인 이벤트</p>
+								<p>2021.4.1 ~ 2021.4.30</p>
+							</article>
+						</a>
+						<a href="#" alt="프로모션4">
+							<article class="promoAbsol promo4">
+								<img src="images/promo_04.jpg" alt="제휴 이벤트 이미지">
+								<span>강릉</span>
+								<p>카페거리 제휴 매장 할인 이벤트</p>
+								<p>2021.4.1 ~ 2021.4.30</p>
+							</article>
+						</a>
+						<a href="#" alt="프로모션1">
+							<article class="promoAbsol promo1">
+								<img src="images/promo_01.jpg" alt="제휴 이벤트 이미지">
+								<span>강릉</span>
+								<p>카페거리 제휴 매장 할인 이벤트</p>
+								<p>2021.4.1 ~ 2021.4.30</p>
+							</article>
+						</a>
+						<a href="#" alt="프로모션2">
+							<article class="promoAbsol promo2">
+								<img src="images/promo_02.jpg" alt="제휴 이벤트 이미지">
+								<span>강릉</span>
+								<p>카페거리 제휴 매장 할인 이벤트</p>
+								<p>2021.4.1 ~ 2021.4.30</p>
+							</article>
+						</a>
+						<a href="#" alt="프로모션3">
+							<article class="promoAbsol promo3">
+								<img src="images/promo_03.jpg" alt="제휴 이벤트 이미지">
+								<span>강릉</span>
+								<p>카페거리 제휴 매장 할인 이벤트</p>
+								<p>2021.4.1 ~ 2021.4.30</p>
+							</article>
+						</a>
+					</article>
+				</article>
+				<article class="promoBtn">
+					<a class="promoBtnPrev" href="#" alt="프로모션 왼쪽으로 한칸 이동">
+						<img src="images/promo_btn_left.png" onmouseover="this.src='images/promo_btn_left_over.png'" onmouseout="this.src='images/promo_btn_left.png'">
+					</a>
+					<a class="promoBtnNext" href="#" alt="프로모션 오른쪽으로 한칸 이동">
+						<img src="images/promo_btn_right.png" onmouseover="this.src='images/promo_btn_right_over.png'" onmouseout="this.src='images/promo_btn_right.png'">
+					</a>
+				</article>
+			</section>
+		</section> <!-- section_promo 끝 -->
+		
+		<section id="loca">
+			<h2 class="Title">찾아오시는 길<span class="subTitle">THE JOEUN LOCATION</span></h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12614.87965754315!2d128.93851704111083!3d37.773165087254945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3561e702e8037ea7%3A0x840a1ad694a38e0a!2z7JWI66qp7ZW067OA!5e0!3m2!1sko!2skr!4v1617170798491!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			<article>
+				<p>강원도 강릉시 창해로14번길 20-1</p>
+				<hr>
+				<article>
+					<p class="car">자동차로 오실 경우</p>
+					<p class="gogo">서울 출발</p>
+					<p>올림픽대로 → 서울양양고속도로 → 북강릉IC → 동해대로 → 강릉대로 → 해안로 → 펜션 더조은</p>
+					<p class="gogo">경부고속도로 이용</p>
+					<p>경부고속도로 → 영동고속도로 → 강릉IC → 동해대로 → 펜션 더조은</p>
+				</article>
+				<article>
+					<p class="car">대중교통으로 오실 경우</p>
+					<p class="gogo">고속버스 이용</p>
+					<p>서울고속버스터미널 → 강릉고속버스터미널 → 시내버스302 → 안목정류장 하차 → 도보로 이동</p>
+					<p class="gogo">시외버스 이용</p>
+					<p>동서울종합버스터미널 → 강릉시외버스터미널 → 시내버스302 → 안목정류장 하자 → 도보로 이동</p>
+					<p class="gogo">KTX 이용</p>
+					<p>서울역(청량리역, 상봉역) → 강릉역 → 택시 → 안목정류장 하차 → 도보로 이동</p>
+				</article>
+			</article>
+		</section> <!-- section_loca 끝 -->
+	</body>
+	<footer>
+		<section id="Wrap">
+			<img src="images/logo_white.png" alt="로고 이미지">
+			<article>
+				<ul>
+					<li><a href="#" alt="펜션 더조은">펜션 더조은</a> | </li>
+					<li><a href="#" alt="사업자정보확인">사업자정보확인</a> | </li>
+					<li><a href="#" alt="개인정보처리방침">개인정보처리방침</a> | </li>
+					<li><a href="#" alt="이용약관">이용약관</a> | </li>
+					<li><a href="#" alt="사이트맵">사이트맵</a></li>
+				</ul>
+				<address>
+					펜션 더조은 | 대표이사 홍길동 | 사업자등록번호 : 123-45-67890 | 주소 : 강원도 강릉시 창해로14번길 20-1<br>
+					Tel. 033)123-4567 | 이메일 : thejoeun@thejoeun.com<br>
+					계좌번호 : 국민 000000-00-000000 (예금주 : 홍길동)<br><br>
+					ⓒPENSION THE JOEUN
+				</address>
+			</article>
+			<ul>
+				<li><a href="#" alt="인스타그램"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="#" alt="페이스북"><i class="fab fa-facebook-square"></i></a></li>
+				<li><a href="#" alt="유튜브"><i class="fab fa-youtube"></i></a></li>
+			</ul>
+		</section>
+	</footer>
+</html>
